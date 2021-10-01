@@ -195,6 +195,7 @@ public class MainApp extends MultiDexApplication implements HasAndroidInjector {
      * TODO: remove when cleaning DI in NContentObserverJob
      */
     public PowerManagementService getPowerManagementService() {
+        System.out.println("foo");
         return powerManagementService;
     }
 
