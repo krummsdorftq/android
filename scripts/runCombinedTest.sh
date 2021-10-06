@@ -35,7 +35,7 @@ stat=$(( stat | $? ))
 
 curl -Os https://uploader.codecov.io/latest/linux/codecov
 chmod +x codecov
-./codecov -t fc506ba4-33c3-43e4-a760-aada38c24fd5 -r nextcloud/android -v
+./codecov -t fc506ba4-33c3-43e4-a760-aada38c24fd5 -v -f build/jacoco/jacoco.xml
 
 echo "Exit with: " $stat
 exit $stat
